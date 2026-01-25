@@ -17,12 +17,12 @@ class Solution {
         int i = 0, j = 1;
         while(i < neg.length || j < pos.length){
             if(i < neg.length && (res.size() % 2 != 0)){
-                res.add(neg[i]);
-                i++;
+                res.add(neg[i++]);
+                // i++;
             }
             if(j < pos.length && (res.size() % 2 == 0)){
-                res.add(pos[j]);
-                j++;
+                res.add(pos[j++]);
+                // j++;
             }
         }
         int[] arr = new int[nums.length];
