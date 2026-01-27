@@ -17,8 +17,8 @@ class Solution {
             //start the next row
             List<Integer> row = new ArrayList<>();
             row.add(1);                                 // add 1 to the list(first element)
-            for(int j = 0; j < i- 1; j++){
-                row.add(prevRow.get(j) + prevRow.get(j + 1));
+            for(int j = 1; j < i; j++){
+                row.add(prevRow.get(j -1) + prevRow.get(j));
             }
             row.add(1);                                // add 1 to the list(last element)
 
