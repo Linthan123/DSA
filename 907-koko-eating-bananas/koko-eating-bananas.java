@@ -1,12 +1,15 @@
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
 
-        int low = 1;
+        int low = 1;   //starting speed is 1
         int high = 0;
 
+        //maxmimum speed is highest value in an array
         for(int p: piles){
            high = Math.max(high, p); 
         }
+
+        //Binary search
         while(low < high){
             int mid = low + (high - low) / 2;
 
