@@ -2,7 +2,7 @@ class Solution {
     public int maxDistance(int[] position, int m) {
         Arrays.sort(position);
         int low = 0;
-        int high = position[position.length-1];
+        int high = position[position.length-1] - position[0];
 
         int ans = 0;
         while(low <= high){
@@ -21,7 +21,7 @@ class Solution {
     static boolean isPosible(int[] position, int m, int mid){
         int Ballcount = 1;
         int Lastpos = position[0];
-        for(int i = 0; i<position.length; i++){
+        for(int i = 1; i<position.length; i++){
             if(position[i] - Lastpos  >= mid){
                 Lastpos = position[i];
                 Ballcount++;
