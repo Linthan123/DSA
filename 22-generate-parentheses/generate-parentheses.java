@@ -7,11 +7,13 @@ class Solution {
         solve(n, result, oc, cc, "");
         return result;
     }
-        private void solve(int n, List<String> result, int oc, int cc, String s){
+        
+    private void solve(int n, List<String> result, int oc, int cc, String s){
 
-            if(oc == n && cc == n){
-           result.add(new String(s));
-           return;
+        //Base case
+        if(oc == n && cc == n){
+            result.add(new String(s));
+            return;
         }
 
         if(oc < n){
@@ -21,6 +23,6 @@ class Solution {
         if(cc < oc){
             solve(n, result, oc, cc + 1, s+")");
         }
-        }
+    }
         
 }
