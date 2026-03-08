@@ -16,7 +16,7 @@ class Solution {
         }
         else{
             for(int i = nums.length - 1; i>=0; i--){
-                if(nums[i] > nums[idx1]){
+                if(nums[idx1] < nums[i]  ){
                     idx2 = i;
                     break;
                 }
