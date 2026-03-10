@@ -11,9 +11,9 @@ class Solution {
         for(int i = 0; i<m; i++){
             for(int j = 0; j<n; j++){
 
-                // if(grid[i][j] != 0){
+                if(grid[i][j] != 0){
                     path(i, j, grid, isVisited, 0);
-                // }
+                }
             }
         }
         return maxGold;
