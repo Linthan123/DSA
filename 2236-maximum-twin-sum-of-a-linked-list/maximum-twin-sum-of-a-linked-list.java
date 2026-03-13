@@ -21,7 +21,7 @@ class Solution {
 
                 curSum = firsthalf.val + secondhalf.val;
                 if(curSum > maxSum){
-                    maxSum = Math.max(maxSum, curSum);
+                    maxSum = curSum;
                 }
                 
                 firsthalf = firsthalf.next;
