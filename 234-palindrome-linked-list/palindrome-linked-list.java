@@ -31,11 +31,11 @@ class Solution {
         ListNode fast = head;
         ListNode slow = head;
 
-        while(fast != null && fast.next != null){
+        while(fast.next != null && fast.next.next != null){
             slow = slow.next;
             fast = fast.next.next;
         }
-        return slow;
+        return slow.next;
     }
         private ListNode reverse(ListNode head){
             ListNode curr = head;
